@@ -25,9 +25,8 @@ const Time = () => {
     <div className={styles.containerTime}>
       <span className={styles.timeTittle}>ТАЙМИНГ</span>
       <div className={styles.containerRings}>
-        <span className={styles.rings}>
-          <Rings />
-        </span>
+        <Rings />
+
         <div className={styles.containerColumn}>
           <div className={styles.containerLeft}>
             {timelineItems.map((item, i) => (

@@ -1,13 +1,12 @@
 .containerDrees {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .dreesTitle {
-  height: 10%;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,18 +59,6 @@
   font-size: 18px;
   letter-spacing: 2px;
 }
-.containerCenter {
-  height: 10%;
-  display: flex;
-  width: 100%;
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: rgba(51, 50, 50);
-  text-align: center;
-  font-size: 23px;
-}
 
 .blockBlack {
   flex: 1;
@@ -108,7 +95,6 @@
 
   padding: 15px 0;
   border-bottom: 1px solid #c66e4e;
-  flex-grow: 1;
 }
 
 .containerWoman,

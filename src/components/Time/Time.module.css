@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* тоже не center */
 }
 
 .timeTittle {
@@ -23,26 +24,18 @@
 
 .containerRings {
   border: 1px solid #c66e4e;
-  flex-grow: 1;
+
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   box-shadow: 0 0 10px black;
   width: 100%;
   padding: 10px 0;
-
+  flex-grow: 1;
   border-radius: 0px 0px 100px 100px;
   overflow: hidden;
-}
-
-.rings {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
 
 .containerColumn {
@@ -50,7 +43,6 @@
   gap: 30px;
   margin-top: 32px;
   position: relative;
-  margin-top: 32px;
 }
 .containerLeft {
   display: flex;
@@ -116,6 +108,8 @@
 @media (max-width: 600px) {
   .containerColumn {
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .boxLeft {
