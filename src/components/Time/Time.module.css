@@ -7,7 +7,7 @@
 }
 
 .timeTittle {
-  height: 10%;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,8 +30,8 @@
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 0 10px black;
-  height: 100%;
   width: 100%;
+  padding: 10px 0;
 
   border-radius: 0px 0px 100px 100px;
   overflow: hidden;
@@ -48,7 +48,7 @@
 .containerColumn {
   display: flex;
   gap: 30px;
-  height: 100%;
+  margin-top: 32px;
   position: relative;
   margin-top: 32px;
 }
