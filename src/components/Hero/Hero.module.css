@@ -1,7 +1,7 @@
 .containerHero {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* 🔥 ВАЖНО */
+  min-height: 100vh;
   overflow: hidden;
   border-bottom: 1px solid #c66e4e;
 }
