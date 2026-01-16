@@ -33,13 +33,16 @@
   height: 100%;
   width: 100%;
 
-  padding: 20px 15px;
   border-radius: 0px 0px 100px 100px;
   overflow: hidden;
 }
 
 .rings {
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .containerColumn {
@@ -47,6 +50,7 @@
   gap: 30px;
   height: 100%;
   position: relative;
+  margin-top: 32px;
 }
 .containerLeft {
   display: flex;
@@ -116,15 +120,15 @@
 
   .boxLeft {
     width: 130px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .boxRight {
     width: 130px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .boxLeft svg {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
   }
   .timeTittle {
     font-size: 20px; /* меньше заголовок */

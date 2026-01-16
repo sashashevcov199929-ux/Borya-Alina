@@ -105,7 +105,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   display: flex;
-  gap: 10px;
+
   padding: 15px 0;
   border-bottom: 1px solid #c66e4e;
   flex-grow: 1;
@@ -145,7 +145,7 @@
 @media (max-width: 768px) {
   .containerBottom {
     flex-direction: column;
-    gap: 15px;
+
     padding: 10px 0;
   }
 
@@ -169,13 +169,13 @@
     border-radius: 20px;
   }
   .dreesTitle {
-    font-size: 24px;
+    font-size: 28px;
   }
   .textTittle {
     font-size: 32px;
   }
   .text {
-    font-size: 11px;
+    font-size: 12px;
   }
   .containerCenter {
     font-size: 20px;

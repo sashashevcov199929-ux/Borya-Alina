@@ -85,7 +85,7 @@
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
-  gap: 20px;
+  gap: 40px;
   padding-bottom: 10px;
   background-image: url("./../../assets/wedding.png");
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@
   }
   .containerCalendar {
     height: 100%;
-    padding-top: 60px;
+    padding-top: 90px;
     border-top-left-radius: 80px;
     border-top-right-radius: 80px;
   }

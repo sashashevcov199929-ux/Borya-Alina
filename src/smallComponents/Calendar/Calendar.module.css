@@ -88,8 +88,8 @@
 
   .day,
   .dayShwet {
-    width: 45px; /* меньше квадрат */
-    height: 45px;
+    width: 55px; /* меньше квадрат */
+    height: 55px;
   }
 
   .weekday {

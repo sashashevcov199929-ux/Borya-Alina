@@ -4,8 +4,8 @@ const Rings = () => {
   return (
     <svg
       className={styles.rings}
-      width="130"
-      height="110"
+      width="145"
+      height="125"
       viewBox="0 0 200 140"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

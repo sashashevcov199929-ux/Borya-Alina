@@ -117,7 +117,7 @@ const Place = () => {
             )}
           </AnimatePresence>
 
-          <p>Правила LogHouse</p>
+          <p>Свадебный этикет</p>
           <span className={styles.botText} onClick={() => setIsOpen(true)}>
             Ознакомиться
           </span>
