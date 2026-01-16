@@ -1,0 +1,134 @@
+.containerTime {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeTittle {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: rgba(51, 50, 50);
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.containerRings {
+  border: 1px solid #c66e4e;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px black;
+  height: 100%;
+  width: 100%;
+
+  padding: 20px 15px;
+  border-radius: 0px 0px 100px 100px;
+  overflow: hidden;
+}
+
+.rings {
+  z-index: 2;
+}
+
+.containerColumn {
+  display: flex;
+  gap: 30px;
+  height: 100%;
+  position: relative;
+}
+.containerLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.boxLeft {
+  height: 90px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #d5d5d5;
+  font-size: 25px;
+  gap: 20px;
+}
+
+.boxLeft svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  color: #c66e4e;
+  animation: breathe 3.5s ease-in-out infinite;
+}
+
+.boxRight {
+  height: 90px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #d5d5d5;
+  font-size: 25px;
+}
+.containerCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.boxCenter {
+  height: 90px;
+  width: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .containerColumn {
+    gap: 15px;
+  }
+
+  .boxLeft {
+    width: 130px;
+    font-size: 14px;
+  }
+  .boxRight {
+    width: 130px;
+    font-size: 14px;
+  }
+  .boxLeft svg {
+    height: 20px;
+    width: 20px;
+  }
+  .timeTittle {
+    font-size: 20px; /* меньше заголовок */
+    text-align: center;
+    padding-top: 10px;
+  }
+}

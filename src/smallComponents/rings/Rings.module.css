@@ -1,0 +1,73 @@
+.rings {
+  display: block;
+}
+
+/* Кольца */
+.leftRing {
+  animation: leftMove 2.5s ease-in-out infinite;
+}
+
+.rightRing {
+  animation: rightMove 2.5s ease-in-out infinite;
+}
+
+/* Бриллиант */
+.diamond {
+  animation: sparkle 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));
+}
+
+/* Анимации колец */
+@keyframes leftMove {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(201, 161, 74, 0.6));
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0.7;
+  }
+}
+
+@keyframes rightMove {
+  0% {
+    transform: translateX(10px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(201, 161, 74, 0.6));
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0.7;
+  }
+}
+
+/* Анимация мерцания бриллианта */
+@keyframes sparkle {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+@media (max-width: 480px) {
+  .rings {
+    width: 120px;
+  }
+}

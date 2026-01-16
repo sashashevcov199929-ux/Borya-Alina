@@ -1,0 +1,103 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
+
+  flex-wrap: nowrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #d5d5d5;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.323);
+}
+
+.day:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weekday {
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #c66e4e;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dayShwet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0px 10px rgb(215, 4, 4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  background-image: url("./../../assets/heart.png"); /* путь к PNG */
+  background-size: 110% auto; /* размер картинки */
+  background-repeat: no-repeat;
+  background-position: center; /* центрируем */
+}
+.dayShwet:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0px 30px rgb(215, 4, 4);
+}
+/* Адаптация календаря под мобильные устройства */
+@media (max-width: 480px) {
+  .calendar {
+    gap: 6px; /* меньше расстояние между днями */
+    padding: 10px; /* меньше паддинги */
+    max-width: 100%; /* занимает всю ширину экрана */
+    overflow-x: auto; /* если не помещается, можно скроллить */
+  }
+
+  .day,
+  .dayShwet {
+    width: 45px; /* меньше квадрат */
+    height: 45px;
+  }
+
+  .weekday {
+    font-size: 10px; /* меньший шрифт для дней недели */
+    margin-bottom: 3px;
+  }
+
+  .date {
+    font-size: 16px; /* меньший шрифт для чисел */
+  }
+}

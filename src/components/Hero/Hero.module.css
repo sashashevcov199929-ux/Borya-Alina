@@ -1,0 +1,76 @@
+.containerHero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* 🔥 ВАЖНО */
+  overflow: hidden;
+  border-bottom: 1px solid #c66e4e;
+}
+
+.heroImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroTextContainer {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: rgb(248, 248, 248);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
+}
+.underText {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 5px;
+  opacity: 0.4;
+}
+.player {
+  position: absolute;
+  bottom: 5%; /* от нижнего края Hero */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+/* Для очень маленьких телефонов */
+@media (max-width: 480px) {
+  .heroImage {
+    height: 100%;
+  }
+
+  .heroTextContainer {
+    top: 40%;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .text {
+    font-size: 1.2rem;
+  }
+}

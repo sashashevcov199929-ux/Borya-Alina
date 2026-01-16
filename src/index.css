@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/*
+
+font-family: "Great Vibes", cursive;
+font-weight: 400;
+font-style: normal;
+
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/* 
+font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+/** 
+font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; 
+    **/
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0;
+  background-color: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Паддинг только на телефоне */
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  scroll-snap-type: y mandatory;
+}

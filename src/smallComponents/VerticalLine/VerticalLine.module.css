@@ -1,0 +1,47 @@
+.line {
+  position: relative;
+  width: 2px;
+  height: 50px;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 0;
+  background-color: #c66e4e; /* золото */
+  transform: translate(-50%, -50%);
+  animation: growLine 1.6s ease-out forwards;
+}
+
+/* Анимация роста из центра */
+@keyframes growLine {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80px;
+  }
+}
+
+/* 📱 Мобилка */
+@media (max-width: 480px) {
+  .line {
+    height: 80px;
+  }
+
+  .line::before {
+    animation: growLineMobile 1.4s ease-out forwards;
+  }
+
+  @keyframes growLineMobile {
+    from {
+      height: 0;
+    }
+    to {
+      height: 80px;
+    }
+  }
+}

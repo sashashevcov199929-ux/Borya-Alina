@@ -1,0 +1,145 @@
+.containerDate {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.containerText {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px black;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #c66e4e;
+  border-bottom-right-radius: 80px;
+  overflow: hidden;
+  border-bottom-left-radius: 80px;
+  gap: 20px;
+}
+
+.textTop {
+  color: #c66e4e;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(38px, 8vw, 55px);
+  margin-top: 15px;
+}
+.textCenter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d5d5d5;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+}
+.textBottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c66e4e;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 19px;
+}
+.avgust {
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: rgba(51, 50, 50);
+}
+.containerCalendar {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px black;
+  width: 100%;
+  margin-top: 20px;
+  height: 100%;
+  border-top: 1px solid #c66e4e;
+  border-bottom: 1px solid #c66e4e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+  gap: 20px;
+  padding-bottom: 10px;
+  background-image: url("./../../assets/wedding.png");
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+/* overlay с нужным цветом */
+
+@media (max-width: 480px) {
+  .textTop {
+    font-size: 32px; /* уменьшили заголовок */
+    margin-top: 5px;
+  }
+
+  .textCenter {
+    font-size: 13px; /* основной текст чуть меньше */
+    line-height: 1.4; /* плотнее для мобильного */
+    padding: 0 10px; /* чтобы не прилегал к краям */
+  }
+
+  .textBottom {
+    font-size: 15px; /* финальный текст меньше */
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .containerText {
+    gap: 15px; /* меньше расстояние между блоками */
+    height: auto; /* чтобы контент не обрезался */
+    padding: 20px 0; /* добавим небольшой отступ сверху и снизу */
+    width: 100%;
+  }
+  .avgust {
+    font-size: 20px;
+  }
+  .containerCalendar {
+    height: 100%;
+    padding-top: 60px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+  .containerImg {
+    width: 200px; /* ширина контейнера */
+    height: 150px;
+    left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .textCenter {
+  }
+  .textBottom {
+    font-size: 17px;
+  }
+  .textTop {
+    font-size: 40px;
+  }
+}
